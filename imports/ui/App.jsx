@@ -19,7 +19,7 @@ export default class App extends Component {
     handleSearch(event) {
         event.preventDefault();
         if(this.state.wikiSearch !==""){
-            Meteor.call("wikiexplore", search (err, data)=>{
+            Meteor.call("wikiexplore", (err, data)=>{
                 if(err){
                     this.setState({err});
                     return;
@@ -32,36 +32,40 @@ export default class App extends Component {
             })
         }
     }
+
+    renderHistory(){
+        return this.state.history.map(p=>
+            <div>
+                {p.res.history}
+            </div>
+        );
+    }
+    renderLinks(){
+        return this.state.links.map(p=>
+            <div>
+                {p.res.links}
+            </div>
+        );
+    }
     render () {
         return (
             <div>
                 <div>
                     <h1>Wiki Explorer</h1>
-                    <label htmlFor="wikiExplorer">Search</label>
+                    <label >Search: <input type ="text" ref = {this.state.data} onChange={(e) => this.handleSearch(e)}/></label>
 
-                    <input type ="text" name = {"wikiExplorer"} value = {this.state.wikiExplorer} onChange={(e) => this.handleSearch(e)}/>
+
                 </div>
 
                 <div>
                     <h2>History</h2>
-                    {this.state.data.length >0 ?
-                        <div>
-                            <h1>{this.state.data[0]}</h1>
-                            {this.state.data[1].map((value, index) => {
-                                return (
-                                    <div key={index} style={{border: "1px solid #111111"}}>
-                                        <p>Title: {value}</p><br/>
-                                        <p>Description: {this.state.data[2][index]}</p><br/>
-                                        <p>Link: <a href={this.state.data[3][index]}>{this.state.data[3][index]}</a></p><br/>
-                                    </div>
-                                );
-                            })}
-                        </div>
-                        : ""}
+                    {this.renderHistory()}
+
                 </div>
+
                 <div>
-                    {/*<h2>Content</h2>*/}
-                    {/*<span dangerouslySetInnerHTML={{__html: this.state.content["*"]}}></span>*/}
+                   <h2>Links</h2>
+                    {this.renderLinks()}
                 </div>
             </div>
         );
