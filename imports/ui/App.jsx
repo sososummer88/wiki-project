@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import { Meteor } from "meteor/meteor";
-import { withTracker } from "meteor/react-meteor-data";
-import PropTypes from "prop-types";
 
 export default class App extends Component {
 
@@ -33,6 +31,15 @@ export default class App extends Component {
         }
     }
 
+    onKeyPress(event) {
+        if(event.key == "enter"){
+            this.setState({
+                history: [this.input.value]
+            });
+            this.wikiexplore(this.input.value);
+            this.input.value ="";
+        }
+    }
     renderHistory(){
         return this.state.history.map(p=>
             <div>
@@ -52,9 +59,7 @@ export default class App extends Component {
             <div>
                 <div>
                     <h1>Wiki Explorer</h1>
-                    <label >Search: <input type ="text" ref = {this.state.data} onChange={(e) => this.handleSearch(e)}/></label>
-
-
+                    <label >Search: <input type ="text" ref = {this.onKeyPress(event)} onChange={(e) => this.handleSearch(e)}/></label>
                 </div>
 
                 <div>

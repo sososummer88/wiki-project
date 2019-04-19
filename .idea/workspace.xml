@@ -36,10 +36,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imports/ui/App.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+            <state relative-caret-position="-331">
+              <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
               <folding>
-                <element signature="e#2#43#0" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imports/api/method.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="138">
+              <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="20" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -111,7 +111,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="78" />
     <option name="y" value="23" />
-    <option name="width" value="1137" />
+    <option name="width" value="1093" />
     <option name="height" value="827" />
   </component>
   <component name="ProjectView">
@@ -203,24 +203,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555694546027</updated>
-      <workItem from="1555694547727" duration="7429000" />
+      <workItem from="1555694547727" duration="7833000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7429000" />
+    <option name="totallyTimeSpent" value="7833000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="78" y="23" width="1137" height="827" extended-state="0" />
+    <frame x="78" y="23" width="1093" height="827" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17473118" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18190299" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.1821975" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.20445062" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -242,7 +242,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/imports/ui/App.jsx</url>
-          <line>57</line>
+          <line>62</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -312,8 +312,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/api/method.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="138">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="20" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -322,10 +322,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/App.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        <state relative-caret-position="-331">
+          <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
           <folding>
-            <element signature="e#2#43#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
