@@ -8,18 +8,26 @@ export default class App extends Component {
     constructor (props){
         super(props);
         this.state = {
-            wikiExplorer: "",
-            data:[],
+            content: "",
+            links:[],
+            title:"",
+            history:[],
+            err:""
         }
     }
 
     handleSearch(event) {
         event.preventDefault();
         if(this.state.wikiSearch !==""){
-            Meteor.call("wikiexplore", this.state.wikiExplorer, (error, result)=>{
+            Meteor.call("wikiexplore", search (err, data)=>{
+                if(err){
+                    this.setState({err});
+                    return;
+                }
                 this.setState({
-                    wikiExplorer: "",
-                    data: result.data,
+                    title: res.title,
+                    content: res.text,
+                    links: res.links,
                 })
             })
         }
@@ -30,11 +38,13 @@ export default class App extends Component {
                 <div>
                     <h1>Wiki Explorer</h1>
                     <label htmlFor="wikiExplorer">Search</label>
+
                     <input type ="text" name = {"wikiExplorer"} value = {this.state.wikiExplorer} onChange={(e) => this.handleSearch(e)}/>
                 </div>
 
                 <div>
-                    {this.state.data.length === 4 ?
+                    <h2>History</h2>
+                    {this.state.data.length >0 ?
                         <div>
                             <h1>{this.state.data[0]}</h1>
                             {this.state.data[1].map((value, index) => {
