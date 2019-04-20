@@ -1,10 +1,14 @@
 import { Meteor } from "meteor/meteor";
-import { HTTP } from "meteor/http";
+import { check } from "meteor/check";
+const wikipedia = require("node-wikipedia");
 
 if(Meteor.isServer) {
-    import wikipedia from "node-wikipedia";
+
     Meteor.methods({
-        "wikiexplore"() {
+        //let wikipedia = require("node-wikipedia");
+        "wikiexplore"(term) {
+            check(term, String);
+            console.log("backend: searching " + term);
             return new Promise((resolve, reject) => {
                 wikipedia.page.data(term, { content: true }, resolve);
             });

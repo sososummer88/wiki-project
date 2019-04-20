@@ -13,7 +13,9 @@
     "node-wikipedia": "0.0.2",
     "prop-types": "^15.7.2",
     "react": "^16.5.0",
-    "react-dom": "^16.5.0"
+    "react-dom": "^16.5.0",
+    "react-router-dom": "^5.0.0",
+    "reactstrap": "^8.0.0"
   },
   "meteor": {
     "mainModule": {
