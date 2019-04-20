@@ -5,8 +5,10 @@ I choose to finish the exam in 24 hours.
 # Author:
 Fang Hong: https://sososummer88.github.io/
 
-# Screenshot
-
+# Features
+1. User signup and login.
+2. Wiki search to display title, content and links.
+3. Search history.
 
 # Project Objective
 This is the final exam for Web Development class (Spring 2019)
@@ -23,6 +25,10 @@ meteor npm install
 meteor
 Open your browser and visit http://localhost:3000 and you should see the application.
 
+# Heroku Link
+ https://wikiexploreproject.herokuapp.com/
+ 
+ (currently down due to "meteor not found on Heroku instance" for mysterious reason...)
 # License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details
