@@ -28,7 +28,6 @@ Open your browser and visit http://localhost:3000 and you should see the applica
 # Heroku Link
  https://wikiexploreproject.herokuapp.com/
  
- (currently down due to "meteor not found on Heroku instance" for mysterious reason...)
 # License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details
