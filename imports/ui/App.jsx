@@ -2,21 +2,8 @@ import React, { Component } from "react";
 import { Meteor } from "meteor/meteor";
 import {
     Button,
-    Container,
-    Badge,
-    Card,
-    CardTitle,
-    CardText,
-    Row,
-    Col,
     Form,
-    FormGroup,
-    InputGroup,
     Input,
-    InputGroupAddon,
-    InputGroupText,
-    ListGroup,
-    ListGroupItem
 } from "reactstrap";
 import {Accounts} from "meteor/accounts-base";
 import PropTypes from 'prop-types'
@@ -229,19 +216,11 @@ class App extends Component {
                         placeholder="Username..."
                         id="username"
                         type="text"
-                        //value={this.state.typing}
-                        //onChange={this.onChange.bind(this)}
-                        // onFocus={() => this.setState({ nameFocus: true })}
-                        //onBlur={() => this.setState({ nameFocus: false })}
                     />
                     <Input
                         placeholder="Password..."
                         id="password"
                         type="text"
-                        //value={this.state.typing}
-                        //onChange={this.onChange.bind(this)}
-                        // onFocus={() => this.setState({ nameFocus: true })}
-                        //onBlur={() => this.setState({ nameFocus: false })}
                     />
 
                     <Button fluid size="huge" id="accountButton">
