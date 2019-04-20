@@ -1,6 +1,6 @@
 # wiki-project
 
-I choose to finish the exam in 24 hours. 
+I choose to finish the exam in 24 hours: Use 24 hours and add users + db + deployment (for grading).
 
 # Author:
 Fang Hong: https://sososummer88.github.io/
